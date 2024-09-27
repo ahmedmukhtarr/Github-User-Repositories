@@ -1,0 +1,43 @@
+/* header.css */
+
+/* AppBar Styling */
+.appbar {
+    background-color: #1a1a1a; /* Dark background color */
+    border-bottom: 1px solid #ffffff; /* White border at the bottom */
+    box-shadow: none; /* Remove default shadow */
+    position: fixed;
+    width: 100%;
+  }
+  
+  /* Toolbar styling to adjust spacing */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to toolbar */
+  }
+  
+  /* Logo/Title Styling */
+  .logo {
+    color: white; /* White text color for title */
+    font-weight: bold;
+    font-size: 24px; /* Size of the title */
+    flex-grow: 1; /* Makes the title take up available space */
+  }
+  
+  /* Button Styling */
+  .button {
+    color: white; /* White text for buttons */
+    font-weight: 500; /* Increase font weight */
+    text-transform: none; /* Keep button text case as entered */
+    margin-left: 10px; /* Spacing between buttons */
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+    border-radius: 5px;
+  }
+  
+  .button .MuiButton-startIcon {
+    margin-right: 8px; /* Spacing for icons in buttons */
+  }
+  

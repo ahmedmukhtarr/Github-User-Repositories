@@ -1,0 +1,30 @@
+/* Ensure the body and html take full height and width */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a1a; /* Set the background color to black */
+}
+
+/* General styling for the app container */
+.app-container {
+  display: flex;
+  flex: 1;
+  min-height: 100vh; /* Ensure container takes full viewport height */
+  background-color: #1a1a1a; /* Set background color to black */
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 20px;
+}

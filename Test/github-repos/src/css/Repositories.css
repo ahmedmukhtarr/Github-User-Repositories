@@ -1,0 +1,201 @@
+.repositories-screen {
+  padding: 40px;
+  padding-right: 350px;
+  justify-content: center;
+  align-items: center;
+  flex: 100;
+  min-height: 100vh;
+  margin-top: 5%;
+  color: white; /* Changed text color */
+}
+
+.search-filter-bar {
+  margin-bottom: 20px;
+}
+
+.repositories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the repo cards */
+  padding: 20px;
+  background-color: #82acce;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.repositories-list p {
+  color: #B7E0FF; /* Changed text color */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.repositories-list a {
+  color: #B7E0FF; /* Updated text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repositories-list a:hover {
+  text-decoration: underline;
+}
+
+.no-user-searched {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  font-size: 24px;
+  font-weight: bold;
+  color: #B7E0FF; /* Changed text color */
+  border: 2px dashed #5800FF;
+  padding: 40px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 100%;
+}
+
+.repo-card {
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #B7E0FF;
+  cursor: pointer;
+  color: white; /* Changed text color */
+  border: 1px solid white;
+}
+
+.repo-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.language-badge {
+  background-color: #e900ff;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  color: white; /* Changed text color */
+}
+
+.repo-card .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Custom styles for text inputs */
+.custom-text-field .MuiOutlinedInput-root {
+  
+  border: 1px solid #B7E0FF !important; /* Default border color */
+ 
+}
+
+/* Change border color when focused */
+.custom-text-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #B7E0FF; /* Border color when focused */
+}
+
+/* Change border color on hover */
+.custom-text-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color:#B7E0FF; /* Border color on hover */
+}
+
+/* Change placeholder color */
+.custom-text-field .MuiInputBase-input::placeholder {
+  color: #B7E0FF; /* Placeholder text color */
+}
+
+/* Change text color */
+.custom-text-field .MuiInputBase-input {
+  color:azure; /* Text color for entered text */
+}
+
+/* Change label color */
+.custom-text-field .MuiInputLabel-root {
+  color: #B7E0FF; /* Default label color */
+}
+
+.custom-text-field .MuiInputLabel-root.Mui-focused {
+  color: #B7E0FF; /* Focused label color */
+}
+
+
+
+.language-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.javascript {
+  background-color: #f7df1e; /* JavaScript color */
+}
+
+.typescript {
+  background-color: #007acc; /* TypeScript color */
+}
+
+.python {
+  background-color: #306998; /* Python color */
+}
+
+.java {
+  background-color: #b07219; /* Java color */
+}
+
+.c {
+  background-color: #555555; /* C color */
+}
+
+.cplusplus {
+  background-color: #f34b7d; /* C++ color */
+}
+
+.ruby {
+  background-color: #701516; /* Ruby color */
+}
+
+.go {
+  background-color: #00ADD8; /* Go color */
+}
+
+.php {
+  background-color: #4F5D95; /* PHP color */
+}
+
+.csharp {
+  background-color: #178600; /* C# color */
+}
+
+.swift {
+  background-color: #F05138; /* Swift color */
+}
+
+.kotlin {
+  background-color: #F18E33; /* Kotlin color */
+}
+
+.html {
+  background-color: #E44D26; /* HTML color */
+}
+
+.css {
+  background-color: #264de4; /* CSS color */
+}
+
+.other-language {
+  background-color: #888; /* Default color for unknown languages */
+}
