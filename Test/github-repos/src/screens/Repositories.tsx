@@ -43,7 +43,7 @@ const RepositoriesScreen: React.FC = () => {
 
   const fetchUserData = async (username: string) => {
     try {
-      const token = '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'; // Replace with your token
+      const token = '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'; // Replace with your token
       const userResponse = await axios.get(`https://api.github.com/users/${username}`, {
         headers: {
           Authorization: `token ${token}`,
@@ -75,7 +75,7 @@ const RepositoriesScreen: React.FC = () => {
 
   const fetchRepositories = async (username: string) => {
     try {
-      const token = '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'; // Replace with your token
+      const token = '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'; // Replace with your token
       const reposResponse = await axios.get(`https://api.github.com/users/${username}/repos`, {
         headers: {
           Authorization: `token ${token}`,
