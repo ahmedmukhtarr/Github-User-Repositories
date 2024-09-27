@@ -19,6 +19,7 @@ import Sidebar from './Sidebar';  // Import Sidebar
 import { Star, ForkRight, ExpandMore } from '@mui/icons-material'; // Icons for display
 import '../css/Repositories.css'; // Import the CSS file for styling
 
+
 const RepositoriesScreen: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>(''); // For the user search
   const [repoSearchTerm, setRepoSearchTerm] = useState<string>(''); // For the repository search
@@ -43,19 +44,10 @@ const RepositoriesScreen: React.FC = () => {
 
   const fetchUserData = async (username: string) => {
     try {
-      const token = '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'; // Replace with your token
-      const userResponse = await axios.get(`https://api.github.com/users/${username}`, {
-        headers: {
-          Authorization: `token ${token}`,
-        },
-      });
+      const userResponse = await axios.get(`https://api.github.com/users/${username}`);
       setUserInfo(userResponse.data);
 
-      const orgsResponse = await axios.get(userResponse.data.organizations_url, {
-        headers: {
-          Authorization: `token ${token}`,
-        },
-      });
+      const orgsResponse = await axios.get(userResponse.data.organizations_url);
       setOrgs(orgsResponse.data.map((org: any) => org.login));
 
       // Fetch repositories for the user
@@ -75,12 +67,7 @@ const RepositoriesScreen: React.FC = () => {
 
   const fetchRepositories = async (username: string) => {
     try {
-      const token = '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'; // Replace with your token
-      const reposResponse = await axios.get(`https://api.github.com/users/${username}/repos`, {
-        headers: {
-          Authorization: `token ${token}`,
-        },
-      });
+      const reposResponse = await axios.get(`https://api.github.com/users/${username}/repos`);
       setRepositories(reposResponse.data);
       setOriginalRepositories(reposResponse.data); // Store original repositories
     } catch (error) {
