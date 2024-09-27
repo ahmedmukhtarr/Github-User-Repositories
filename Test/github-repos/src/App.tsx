@@ -5,7 +5,7 @@ import Sidebar from './screens/Sidebar';
 import Overview from './screens/Overview';
 import Repositories from './screens/Repositories';
 import Projects from './screens/Projects';
-import Header from './screens/Headerr';
+import Header from './screens/Header';
 import { Grid } from '@mui/material';
 import './App.css';
 

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import FolderIcon from '@mui/icons-material/Folder';
-import '../css/Headerr.css'; // Import the CSS
+import '../css/Header.css';
 
 const Header: React.FC = () => {
   return (
     <AppBar position="fixed" className="appbar">
       <Toolbar className="toolbar">
         <Typography variant="h4" className="logo">
-          GitHub User Info
+          GitHub User Repositories
         </Typography>
         <Button
           component={Link}
